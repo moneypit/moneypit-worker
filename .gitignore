@@ -1,0 +1,8 @@
+node_modules
+/vendor/
+composer.phar
+*.log
+*.pyc
+config.json
+data_files/pool_definitions.json
+data_files/workers.json
