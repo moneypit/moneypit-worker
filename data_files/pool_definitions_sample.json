@@ -1,0 +1,25 @@
+{
+  "pool_definitions": [
+    {
+      "id": "job_sha256_antproxy",
+      "hash": "sha256",
+      "pools": [
+        {
+          "url": "10.1.10.10:3333",
+          "user": "xxx.antproxy",
+          "pass": "123"
+        },
+        {
+          "url": "stratum.antpool.com:3333",
+          "user": "xxx.{worker}",
+          "pass": "123"
+        },
+        {
+          "url": "stratum+tcp://bitcoin.viabtc.com:3333",
+          "user": "xxx.{worker}",
+          "pass": "123"
+        }
+      ]
+    }
+  ]
+}

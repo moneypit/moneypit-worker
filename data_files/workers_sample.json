@@ -1,0 +1,27 @@
+{
+  "workers": [
+    {
+      "name": "job-s9i-J7957-226",
+      "ip": "10.1.10.226",
+      "netmask": "255.255.255.0",
+      "gateway": "10.1.10.1",
+      "dnsservers": "75.75.75.75",
+      "type": "S9",
+      "hashrate": "14.0T",
+      "algorithm": "SHA256",
+      "location": "moneypitmine",
+      "watts_per_hour": 1310,
+      "miner": "job",
+      "serial_number": "YDFT37CAHJDAJ7957",
+      "order_number": "",
+      "order_date": "",
+      "notes": "S9i",
+      "rack_locator": {
+        "rack": "",
+        "level": "",
+        "position": ""
+      },
+      "root_pw": ""
+    }
+  ]
+}

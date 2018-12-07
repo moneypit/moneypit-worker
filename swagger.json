@@ -1,0 +1,64 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "moneypit-worker",
+    "version": ".1",
+    "title": "moneypit-worker"
+  },
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/config": {
+      "get": {
+        "tags": [
+          "config"
+        ],
+        "summary": "Fetch config",
+        "operationId": "config",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/workers": {
+      "get": {
+        "tags": [
+          "workers"
+        ],
+        "summary": "Fetch worker details",
+        "operationId": "workerList",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/pool_definitions": {
+      "get": {
+        "tags": [
+          "workers"
+        ],
+        "summary": "Fetch list of pool definitions",
+        "operationId": "poolDefinitionList",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  }
+}

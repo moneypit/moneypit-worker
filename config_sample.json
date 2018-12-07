@@ -1,0 +1,24 @@
+{
+  "device": "mp-worker",
+  "location": "moneypitmine",
+  "redis": {
+    "host": "localhost",
+    "port": "6379"
+  },
+  "elasticsearch": {
+    "hosts": [
+      ""
+    ],
+    "index": "mpx-worker-"
+  },
+  "resources": {
+    "worker": {
+      "data": "/moneypit-repos/moneypit-worker/data_files/workers.json",
+      "redis_prefix": "mpx-worker-",
+      "detail_url": "http://localhost:8080/antminer"
+    },
+    "pool_definitions": {
+      "data": "/moneypit-repos/moneypit-worker/data_files/pool_definitions.json"
+    }
+  }
+}
