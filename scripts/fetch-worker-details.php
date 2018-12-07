@@ -17,8 +17,14 @@ while (TRUE) {
 
   $workers = json_decode(file_get_contents($config['resources']['worker']['data']), TRUE);
 
+  echo "----\n";
   foreach ($workers['workers'] as $k=>$worker) {
 
+    $cmd = "/usr/bin/nohup php fetch-worker-details-x.php ../config.json ".$worker['name']." >/dev/null 2>&1 &";
+    echo $cmd."\n";
+    shell_exec($cmd);
+
+    /*
     $redis_key = $config['resources']['worker']['redis_prefix'].$worker['name'];
     echo "[".$redis_key."]\n";
 
@@ -36,8 +42,11 @@ while (TRUE) {
 
     $rClient->set($redis_key, json_encode($workerResourceInstance));
     $rClient->save();
+    */
 
   }
+
+  sleep(120);
 
 
 }
